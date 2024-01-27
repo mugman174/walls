@@ -12,7 +12,7 @@ jobs:
 
       - name: Ensure main utils are installed
         id: core
-        run: brew install coreutils ldid
+        run: brew install coreutils ldid make
 
       - name: Run Main Node Script to Patch Rosiecord
         id: build
