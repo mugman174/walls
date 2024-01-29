@@ -65,5 +65,7 @@ Rosiecord_[[FontName]](https://github.com/acquitelol/rosiecord/tree/master/Fonts
 </div>
 
 Created with <3 By **Rosie** in TypeScript :3
+IPAs supplied by **SomeAspy**'s website
 
 This project simply wraps the [Enmity](https://github.com/enmity-mod/enmity) Project with a new patcher and extra features ~ Show them some love!
+(Vendetta soon:tm:)
