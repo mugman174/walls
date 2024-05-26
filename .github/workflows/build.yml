@@ -25,8 +25,7 @@ jobs:
         id: version
         run: |
           cd ./ipas
-          echo "__DISCORD_VERSION=$(ls | grep Discord | sed -e s/[^0-9.]//g | sed -e s/[/.+?\./]//g)" >> $GITHUB_OUTPUT  
-
+          echo __DISCORD_VERSION=$(ls | grep Discord | grep '[0-9]*' -oz | awk -F"\0" '{print $1 "_" $3}') >> $GITHUB_OUTPUT
       - name: Create release
         uses: marvinpinto/action-automatic-releases@latest
         with:
