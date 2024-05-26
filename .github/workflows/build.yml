@@ -20,13 +20,6 @@ jobs:
       - name: Run Main Script to Pull IPA and Patch Rosiecord
         id: build
         run: sh ./silly.sh
-        
-      - name: Retrieve version
-        id: version
-        run: |
-          cd ./ipas
-          echo "__DISCORD_VERSION=$(ls | grep Discord | sed -e s/[^0-9.]//g | sed -e s/[/.+?\./]//g)" >> $GITHUB_OUTPUT  
-
       - name: Create release
         uses: marvinpinto/action-automatic-releases@latest
         with:
